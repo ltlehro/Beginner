@@ -1,10 +1,10 @@
 import React from 'react'
-import Counter from "./components/Counter.jsx";
+import Todo from "./components/Todo.jsx";
 
 const App = () => {
     return (
         <div>
-            <Counter />
+            <Todo />
         </div>
     )
 }
