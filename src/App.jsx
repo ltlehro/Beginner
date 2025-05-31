@@ -1,10 +1,10 @@
 import React from 'react'
-import Meals from "./components/Meals.jsx";
+import Calculator from "./components/Calculator.jsx";
 
 const App = () => {
     return (
         <div>
-            <Meals />
+            <Calculator />
         </div>
     )
 }
