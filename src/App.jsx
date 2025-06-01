@@ -1,10 +1,10 @@
 import React from 'react'
-import Calculator from "./components/Calculator.jsx";
+import ToggleTheme from "./components/ToggleTheme.jsx";
 
 const App = () => {
     return (
         <div>
-            <Calculator />
+            <ToggleTheme />
         </div>
     )
 }
