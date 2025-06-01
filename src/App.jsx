@@ -1,10 +1,10 @@
 import React from 'react'
-import ToggleTheme from "./components/ToggleTheme.jsx";
+import HiddenSearchBar from "./components/HiddenSearchBar.jsx";
 
 const App = () => {
     return (
         <div>
-            <ToggleTheme />
+            <HiddenSearchBar />
         </div>
     )
 }
