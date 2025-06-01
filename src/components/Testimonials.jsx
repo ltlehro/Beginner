@@ -30,13 +30,8 @@ const Testimonials = () => {
 
     return (
         <div className="testimonial-container">
-            <span>
-                {testimonials[currentIndex].quote}
-            </span>
-
-            <span>
-                {testimonials[currentIndex].author}
-            </span>
+            <span>{testimonials[currentIndex].quote}</span>
+            <span>{testimonials[currentIndex].author}</span>
 
             <button onClick={handleNextClick}>Next</button>
             <button onClick={handlePrevClick}>Prev</button>
