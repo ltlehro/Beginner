@@ -5,7 +5,6 @@ const Accordion = ({title, content}) => {
 
     const [isOpen, setIsOpen] = useState(false)
 
-
     return (
         <section className="accordion-card" key={Math.random()}>
             <div className="header" onClick={()=>setIsOpen(!isOpen)}>

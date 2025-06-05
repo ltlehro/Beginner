@@ -1,0 +1,135 @@
+/* General body styling to center the form */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Using Inter font as per instructions */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f0f2f5; /* Light grey background */
+    padding: 20px; /* Add some padding for smaller screens */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Card container styling */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 30px;
+    width: 100%;
+    max-width: 450px; /* Max width for larger screens */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Placeholder for card image */
+.card-image {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    background-color: #6366f1; /* A nice purple color */
+    border-radius: 50%; /* Make it a circle */
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em; /* For a placeholder icon/text */
+    color: white;
+    /* Optional: You can add an actual image here */
+    /* background-image: url('your-image.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e2e8f0; /* Light grey border */
+    border-radius: 8px; /* Rounded corners for inputs */
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-sizing: border-box; /* Ensures padding doesn't increase total width */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #818cf8; /* Lighter purple on focus */
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); /* Soft focus shadow */
+}
+
+/* Placeholder text styling */
+input::placeholder {
+    color: #94a3b8; /* Muted placeholder color */
+}
+
+/* Error message styling */
+p.error {
+    color: #ef4444; /* Red color for errors */
+    font-size: 0.875rem; /* Smaller font size for errors */
+    margin-top: -10px; /* Pull it closer to the input */
+    margin-bottom: 5px; /* Space before next element */
+    min-height: 20px; /* Reserve space to prevent layout shift */
+    text-align: left;
+}
+
+/* Submit button styling */
+.submitbtn {
+    background-color: #6366f1; /* Main purple button color */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px; /* Rounded corners for button */
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.submitbtn:hover {
+    background-color: #4f46e5; /* Darker purple on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 8px 15px rgba(99, 102, 241, 0.3); /* Enhanced shadow on hover */
+}
+
+.submitbtn:active {
+    background-color: #4338ca; /* Even darker on active/click */
+    transform: translateY(0); /* Reset lift effect */
+    box-shadow: none; /* Remove shadow on active */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .card {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 0.9rem; /* Smaller font for inputs */
+        padding: 12px 15px;
+    }
+
+    .submitbtn {
+        font-size: 1rem; /* Smaller font for button */
+        padding: 12px 15px;
+    }
+}
